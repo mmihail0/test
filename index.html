@@ -8,21 +8,14 @@
     body {
       margin: 0;
       padding: 0;
-      position: relative;
-      height: 100vh;
-    }
-
-    body::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
       background-image: url('https://raw.githubusercontent.com/przemec/Novum/master/assets/images/app.png');
       background-size: cover;
       background-position: center;
-      z-index: -1;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
     }
 
     img {
@@ -32,12 +25,12 @@
       transform: translate(-50%, -50%);
       max-width: 100%;
       max-height: 100%;
-      z-index: 1; /* Make sure the image is on top of the background */
+      z-index: 1; /* Ensure the image is on top of the background */
     }
   </style>
 </head>
 <body>
   <!-- Your content goes here -->
-  <img src="New Project.png" alt="Centered Image">
+  <img src="New Project.png" />
 </body>
 </html>
